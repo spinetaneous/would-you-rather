@@ -1,33 +1,54 @@
-/* ^_^ IRENE'S THINKING SPACE ^_^
-always important to think before you code!
+// IDEA : having arrays with choices + choice msgs linked together via index
 
-// IDEA : having arrays with choices + choice msgs linked
-together via index
+// array for first choices
+var choice1 = [
+  "have eyes for ears",
+  "have one million dollars",
+  "lose all your money and valuables",
+  "be invisible",
+  "be very smart but very weak",
+  "be completely bald",
+  "have a horse's tail",
+  "live without internet"
+];
+// array for messages corresponding to first choices
+var msg1 = [
+  "You'd see very well!",
+  "You'd be very rich!",
+  "Goodbye money!",
+  "Whoa, where did you go!?",
+  "Can you do my homework?",
+  "Your head would be so shiny...",
+  "So fluffy!",
+  "Goodbye computer!"
+];
 
-choice1: ["have eyes for ears?"]
-msg1: ["You'll see very well!"]
-choice2: ["have ears for eyes?"]
-msg2: ["You'll hear very well!"]
+// array for second choices
+var choice2 = [
+  "have ears for eyes",
+  "never get sick",
+  "lose all the pictures you've ever taken",
+  "be able to fly",
+  "be very strong but not very smart",
+  "be completely covered in hair",
+  "have a unicorn's horn",
+  "live without AC or heater"
+];
+// array for messages corresponding to second choices
+var msg2 = [
+  "You'd hear very well!",
+  "Your health would be perfect!",
+  "Goodbye pictures!",
+  "Say, \"Hi!\" to the birds for me!",
+  "Can you carry all my boxes for me?",
+  "Are you a werewolf?",
+  "So shiny!",
+  "Hope you can survive the weather!"
+];
 
-* in main.html:
-have title: WOULD YOU RATHER...
-choice1 OR choice 2
-// IDEA in JS file, choose random num from 0 to arrlength-1
-// get choices and open to choice html pages
-
-* in each choice page:
-get and display appropriate choice msg
-have go back button
-*/
-var choice1 = ["have eyes for ears", "have one million dollars"];
-var msg1 = ["You'll see very well!", "You'd be very rich!"];
-
-var choice2 = ["have ears for eyes", "never get sick"];
-var msg2 = ["You'll hear very well!", "Your health would be perfect!"];
-
-// putting this here won't work because each html page load
-// will reset the value
 // var randNum = Math.floor(Math.random() * (choice1.length));
+// putting ^this line^ here won't work because each html page load
+// will reset the value
 
 function setRandNum() {
   // sets the random number we'll be using
@@ -35,6 +56,7 @@ function setRandNum() {
   // otherwise each html page will reload the .js file
   // and reset our randNum
   var randNum = Math.floor(Math.random() * (choice1.length));
+
   // save randNum into local storage
   localStorage.setItem("randNum", randNum);
 }
