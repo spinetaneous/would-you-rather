@@ -26,20 +26,33 @@
   taking out _blank).
 
   3. Style your div and button classes as you wish.
-  -->
 
-  <!-- choice 1 -->
+  // FIXME fix comments to reflect arrays-->
   <div class="choice">
-    <button class="button" onclick="window.open('choice1.html', '_blank');">have eyes for ears?</button>
+    <!-- choice 1 -->
+    <div id="choice1">
+      <input type="button" class="button" id="button1"
+      value= ""
+      onclick="window.open('choice1.html', '_blank');">
+      </input>
+    </div>
+
+    <p>OR</p>
+
+    <!--choice 2 -->
+    <div id="choice2">
+      <input type="button" class="button" id="button2"
+      value=""
+      onclick="window.open('choice2.html', '_blank');">
+      </input>
+    </div>
   </div>
-
-  <p>OR</p>
-
-  <!--choice 2 -->
-  <div class="choice">
-    <button class="button" onclick="window.open('choice2.html', '_blank');">have ears for eyes?</button>
-  </div>
-
-  <script src="choices.js"></script>
+  <!-- use src to reference an external javascript file -->
+  <!-- please note that when using src, the script tag should be empty -->
+  <script text="text/javascript" src="choices.js"></script>
+  <script>
+  getChoice1();
+  getChoice2();
+  </script>
 </body>
 </html>

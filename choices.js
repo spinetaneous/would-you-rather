@@ -25,4 +25,15 @@ var msg1 = ["You'll see very well!"];
 var choice2 = ["have ears for eyes?"];
 var mgs2 = ["You'll hear very well!"];
 
-var rand_num = Math.floor(Math.random() * (choice1.length));
+var randNum = Math.floor(Math.random() * (choice1.length));
+
+function getChoice1() {
+  // find button1 and give it a value from choice1
+  //document.getElementById('button1').value = choice1[randNum];
+  document.getElementById('button1').value = choice1[randNum];
+}
+
+function getChoice2() {
+  // find button2 and give it a value from choice2
+  document.getElementById('button2').value = choice2[randNum];
+}
