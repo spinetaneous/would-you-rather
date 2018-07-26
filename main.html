@@ -11,25 +11,18 @@
   and at the top of the screen. -->
   <h1>Would you rather...</h1>
 
-  <!-- TO ADD CHOICES:
-  1. Enclose your code in a <div> tag. This means division.
-  In other words, you are packing parts of your code together
-  into its own group, or class. Please give this class a name.
-  This is so that you can style all members of this class
-  all at once later instead of one at a time.
-  2. Next, add the button by using the <button> tag.
-  We will also put these into their own class.
-  The line onclick="window.open('choice1.html', '_blank');"
-  will open a choice in a new tab (you can forego the new tab by
-  taking out _blank).
-  3. Style your div and button classes as you wish.
-  // FIXME fix comments to reflect arrays-->
   <div>
     <!-- choice 1 -->
+    <!-- Put the buttons in "choice" and "button"
+    classes so that they can be styled together later.
+    For now, the value of the buttons are blank
+    because we'll use a function to determine
+    the corresponding values later. FYI, the value
+    of a button is the text that appears on top of it. -->
     <div class="choice" id="choice1">
       <input type="button" class="button" id="button1"
       value= ""
-      onclick="window.open('choice1.html', '_blank');">
+      onclick="window.open('choice1.html', '_blank');"> <!-- opens new tab -->
       </input>
     </div>
 
@@ -39,7 +32,7 @@
     <div class="choice" id="choice2">
       <input type="button" class="button" id="button2"
       value=""
-      onclick="window.open('choice2.html', '_blank');">
+      onclick="window.open('choice2.html', '_blank');"> <!-- opens new tab -->
       </input>
     </div>
   </div>
@@ -54,10 +47,11 @@
   <!-- use src to reference an external javascript file -->
   <!-- please note that when using src, the script tag should be empty -->
   <script text="text/javascript" src="choices.js"></script>
+  <!-- This calls our functions from choices.js -->
   <script>
-  setRandNum();
-  getChoice1();
-  getChoice2();
+  setRandNum(); // sets the variable randNum for all html files to use
+  getChoice1(); // sets the value for button1
+  getChoice2(); // sets the value for button2
   </script>
 </body>
 </html>
