@@ -1,5 +1,6 @@
 body {
     background-color: lightblue;
+    text-align: center;
 }
 
 h1 {
@@ -16,6 +17,7 @@ p {
 
 .choice {
     text-align: center;
+    padding: 15px;
 }
 
 .button {
