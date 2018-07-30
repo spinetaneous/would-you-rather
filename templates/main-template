@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>TITLE</h1>
+
+  <div>
+    <!-- choice 1 -->
+    <div class="choice" id="choice1">
+      <input type="FIXME" class="FIXME" id="FIXME"
+      value= ""
+      onclick="window.open('FIXME', '_blank');"> <!-- opens new tab -->
+      </input>
+    </div>
+
+    <!-- is something missing here? -->
+
+    <!--choice 2 -->
+    <div class="choice" id="choice2">
+      <input
+      FIXME >
+      </input>
+    </div>
+  </div>
+
+  <div>
+  <!-- how would you add a button to give a different question? -->
+  </div>
+
+  <!-- use src to reference an external javascript file -->
+  <script text="text/javascript" src="choices.js"></script>
+  <!-- This calls our functions from choices.js -->
+  <script>
+  // which function sets the variable randNum for all html files to use?
+  // which function sets the value for button1?
+  // which function sets the value for button2?
+  </script>
+</body>
+</html>
